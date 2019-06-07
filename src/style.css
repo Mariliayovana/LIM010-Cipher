@@ -41,6 +41,12 @@ button:hover{
 
 #pantallaDos{
     display: none;
+    
+}
+#error {
+background: red;
+color: aliceblue;
+display: -webkit-inline-box;
 }
 
 
