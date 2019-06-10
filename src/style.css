@@ -38,15 +38,15 @@ button:hover{
     color:yellow
 }
 
-
-#pantallaDos{
-    display: none;
-    
-}
 #error {
-background: red;
-color: aliceblue;
-display: -webkit-inline-box;
+    background: red;
+    color: aliceblue;
+}
+
+
+.ocultar {
+    display : none;
+
 }
 
 
