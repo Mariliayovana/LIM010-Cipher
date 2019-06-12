@@ -12,20 +12,34 @@ const resultado = document.getElementById("conclusion");
 const limpiar = document.getElementById("limpiar");
 const iniciar = document.getElementById("iniciar");
 
+const bloquear = () => {
+    password.disabled = 'disabled';
+    enviar.disabled = 'disabled';
+    resultado.disabled = 'disabled';
+};
+
 let contador = 0;
 enviar.addEventListener('click',() => {
-    contador++;
-    const nameUsuario = name.value;
-    const passwordControl = password.value;  
+    contador ++;
+    name.value = "";
 
-    if(passwordControl === "LABORATORIA"){
+    if (password.value === 'LABORATORIA'){
+        
         primeraPantalla.classList.toggle("ocultar");
         segundaPantalla.classList.toggle("ocultar"); 
+    } else {
+        do {
+            if (contador > 0 && contador < 3) {
+                password.value = "";
+                error.innerHTML = "Contraseña incorrecta";
+            } else if (contador >= 3){
+                error.innerHTML = "Ya utilizaste todos tus intentos, en este momento no podrás ingresar";
+                bloquear();
+            }
+        } while (password.value == 'LABORATORIA');
     }
-                 
-    else if(contador === 3){
-       error.innerHTML = "Ya utilizaste todos tus intentos, en este momento no podrás ingresar";
-    }
+
+     
 }); 
 
 //segunda pantalla// 
@@ -34,6 +48,7 @@ cifrar.addEventListener('click',()=>{
    const offset = parseInt(numer.value);
    let cifrar = cipher.encode(offset,texCifrar);
    resultado.value = cifrar;
+
 });
 decifrado.addEventListener('click',()=>{ 
     const textoDecifrar = texto.value;
@@ -41,6 +56,7 @@ decifrado.addEventListener('click',()=>{
     const offset = parseInt(numer.value);
     let cifrar = cipher.decode(offset,texCifrar);
     resultado.value =cifrar;
+
 });
 limpiar.addEventListener('click', () => {
     texto.value ="";
@@ -58,6 +74,7 @@ iniciar.addEventListener('click',() =>{
              
 });
  
+
 
 
 

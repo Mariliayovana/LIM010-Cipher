@@ -39,9 +39,12 @@ button:hover{
 }
 
 #error {
-    background: red;
+    background: rgb(80, 6, 6);
     color: aliceblue;
-}
+
+
+}   
+
 
 
 .ocultar {
