@@ -22,11 +22,14 @@ let contador = 0;
 enviar.addEventListener('click',() => {
     contador ++;
     name.value = "";
+    texto.value ="";
+    numer.value ="";
+    resultado.value ="";
 
     if (password.value === 'LABORATORIA'){
-        
         primeraPantalla.classList.toggle("ocultar");
         segundaPantalla.classList.toggle("ocultar"); 
+        
     } else {
         do {
             if (contador > 0 && contador < 3) {
@@ -44,7 +47,7 @@ enviar.addEventListener('click',() => {
 
 //segunda pantalla// 
 cifrar.addEventListener('click',()=>{
-   const texCifrar = texto.value.toUpperCase();
+   const texCifrar = texto.value;
    const offset = parseInt(numer.value);
    let cifrar = cipher.encode(offset,texCifrar);
    resultado.value = cifrar;
@@ -52,7 +55,7 @@ cifrar.addEventListener('click',()=>{
 });
 decifrado.addEventListener('click',()=>{ 
     const textoDecifrar = texto.value;
-    const texCifrar = textoDecifrar.toUpperCase();
+    const texCifrar = textoDecifrar;
     const offset = parseInt(numer.value);
     let cifrar = cipher.decode(offset,texCifrar);
     resultado.value =cifrar;
@@ -68,6 +71,7 @@ limpiar.addEventListener('click', () => {
 });
 
 iniciar.addEventListener('click',() =>{
+    password.value ="";
     primeraPantalla.classList.toggle("ocultar");
     segundaPantalla.classList.toggle("ocultar"); 
              
