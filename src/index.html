@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Cipher Cesar</title>
-    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>SIN MÁSCARAS</h1>
-    </header>
-    <main >
-      <div id="pantallaUno"> 
-        <div class="ordenar">
-         <label for="usuario"> NOMBRE </label>
-         <input type="text" id="usuario" name="usuario">
-        </div>
-        <div class="ordenar">
-         <label for="contraseña">CONTRASEÑA</label>
-         <input type="password" id="contraseña" name="contraseña">
-        </div>
-        <button type="button" id="enviar">ENVIAR</button> 
-        <div id="error"></div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Cipher Cesar</title>
+  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>SIN MÁSCARAS</h1>
+  </header>
+  <main>
+    <div id="pantallaUno">
+      <div class="ordenar">
+        <label for="usuario"> NOMBRE </label>
+        <input type="text" id="usuario" name="usuario">
       </div>
-      <div id="pantallaDos" class="ocultar">
-        <h2>¡UNIDOS POR UN PAIS MEJOR!</h2>
-        <div class="ordenar">
-          <label for="texto">MENSAJE</label>
-          <input type="text" id="texto" name="texto">
-        </div>
-        <div class="ordenar">
-          <label for="codigo">CODIGO </label>
-          <input type="number" id="numero" name="numero">
-        </div>
-        <div class="ordenar">
-          <label for="resultadp">RESULTADO</label>
-          <input type="text" id="conclusion" name="conclusion">
-        </div>
-        <button id="cifrar">CIFRAR</button>
-        <button id="decifrar">DECIFRAR</button>
-        <button id="limpiar">LIMPIAR</button>
-        <button id="iniciar">INICIAR</button>
+      <div class="ordenar">
+        <label for="contraseña">CONTRASEÑA</label>
+        <input type="password" id="contraseña" name="contraseña">
       </div>
-    </main>
-    <footer>
-      <div class="pagina"> ¡Defendemos la verdad y protegemos tu vida! &#128110;  </div>
-    </footer>
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+      <button type="button" id="enviar">ENVIAR</button>
+      <div id="error"></div>
+    </div>
+    <div id="pantallaDos" class="ocultar">
+      <h2>¡UNIDOS POR UN PAIS MEJOR!</h2>
+      <div class="ordenar">
+        <label for="texto">MENSAJE</label>
+        <input type="text" id="texto" name="texto">
+      </div>
+      <div class="ordenar">
+        <label for="codigo">CODIGO </label>
+        <input type="number" id="numero" name="numero">
+      </div>
+      <div class="ordenar">
+        <label for="resultadp">RESULTADO</label>
+        <input type="text" id="conclusion" name="conclusion" value="Dato de solo lectura" readonly>
+      </div>
+      <button id="cifrar">CIFRAR</button>
+      <button id="decifrar">DECIFRAR</button>
+      <button id="limpiar">LIMPIAR</button>
+      <button id="iniciar">INICIAR</button>
+    </div>
+  </main>
+  <footer>
+    <div class="pagina"> ¡Defendemos la verdad y protegemos tu vida! &#128110; </div>
+  </footer>
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>

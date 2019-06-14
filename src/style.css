@@ -39,21 +39,23 @@ button:hover{
 }
 
 #error {
+    width: 100%;
     background: rgb(80, 6, 6);
     color: aliceblue;
+    text-align: center
 
 
 }   
 .pagina{
     width: 100%;
-    height: 50px;
+    height: 30px;
     bottom: 0;
     position: fixed;
-    background-color: blue;
+    background-color: rgb(44, 42, 40);
     color: white;
     text-align: center;
     font-family: 'Abhaya Libre', serif;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 

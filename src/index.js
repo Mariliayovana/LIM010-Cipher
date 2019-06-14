@@ -34,9 +34,9 @@ enviar.addEventListener('click',() => {
         do {
             if (contador > 0 && contador < 3) {
                 password.value = "";
-                error.innerHTML = "Contraseña incorrecta";
+                error.innerHTML = 'Contraseña incorrecta';
             } else if (contador >= 3){
-                error.innerHTML = "Ya utilizaste todos tus intentos, en este momento no podrás ingresar";
+                error.innerHTML = 'Ya utilizaste todos tus intentos, en este momento no podrás ingresar';
                 bloquear();
             }
         } while (password.value == 'LABORATORIA');
