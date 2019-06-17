@@ -18,7 +18,7 @@ window.cipher = {
       else if(string.charCodeAt(i) >= 205 && string.charCodeAt(i) <= 218){  //para la letra Ñ//
         cifraDe = (string.charCodeAt(i)-205 + offset) % 14 + 205;
       }
-      else if(string.charCodeAt(i) >= 232 && string.charCodeAt(i) <= 246){
+      else if(string.charCodeAt(i) >= 232 && string.charCodeAt(i) <= 246){   // para la letra ñ//
         cifraDe = (string.charCodeAt(i)-232 + offset) % 15 + 232;
       }
       else{
