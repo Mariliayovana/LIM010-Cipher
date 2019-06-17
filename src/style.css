@@ -8,7 +8,7 @@ body{
     
 }
 h1{
-    color: rgb(216, 18, 18);
+    color: rgb(209, 84, 84);
     font-size: 30pt;
     font-family:'Open Sans',sans-serif; 
 }
@@ -39,21 +39,21 @@ button:hover{
 }
 
 #error {
-    background: rgb(80, 6, 6);
-    color: aliceblue;
+
+    color: rgb(146, 12, 23);
 
 
 }   
 .pagina{
     width: 100%;
-    height: 50px;
+    height: 25px;
     bottom: 0;
     position: fixed;
-    background-color: blue;
+    background-color: rgb(53, 39, 41);
     color: white;
     text-align: center;
     font-family: 'Abhaya Libre', serif;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 
