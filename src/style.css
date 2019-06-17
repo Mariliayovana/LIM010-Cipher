@@ -8,7 +8,7 @@ body{
     
 }
 h1{
-    color: rgb(216, 18, 18);
+    color: rgb(230, 99, 99);
     font-size: 30pt;
     font-family:'Open Sans',sans-serif; 
 }
@@ -38,11 +38,9 @@ button:hover{
     color:yellow
 }
 
-#error {
-    width: 100%;
-    background: rgb(80, 6, 6);
-    color: aliceblue;
-    text-align: center
+.error {
+    color: rgb(163, 29, 5);
+    float: none;
 
 
 }   
