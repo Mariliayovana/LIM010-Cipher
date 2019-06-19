@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <title>Cipher Cesar</title>
-  <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <h1>SIN MÁSCARAS</h1>
-  </header>
-  <main>
-    <div id="pantallaUno">
-      <div class="ordenar">
-        <label for="usuario"> NOMBRE </label>
-        <input type="text" id="usuario" name="usuario">
+  <head>
+    <meta charset="utf-8">
+    <title>Cipher Cesar</title>
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>SIN MÁSCARAS</h1>
+    </header>
+    <div class="background-layer"></div>
+    <main >
+      <div id="pantallaUno"> 
+        <div class="ordenar">
+         <label for="usuario">TU NOMBRE </label>
+         <input type="text" id="usuario" name="usuario">
+        </div>
+        <div class="ordenar">
+         <label for="contraseña">CONTRASEÑA</label>
+         <input type="password" id="contraseña" name="contraseña">
+        </div>
+        <button type="button" id="enviar">ENVIAR</button> 
+        <div id="error"></div>
       </div>
       <div class="ordenar">
         <label for="contraseña">CONTRASEÑA</label>

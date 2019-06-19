@@ -39,4 +39,4 @@
 * Mejore el titulo de la segunda pagina, haciendo que el titulo sea mas amigable al usuario, y el nombre del texto para que tenga mayor comprención.Fue con el feedback de mi compañera.
 
 ![hola](sc/balsami1.png)
-![hola](sc/balsami2.png) 
+![hola](sc/balsami2.png)
