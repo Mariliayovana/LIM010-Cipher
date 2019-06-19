@@ -13,7 +13,7 @@ window.cipher = {
         cifraDe = (string.charCodeAt(i)- 97 + offset) % 26 + 97;
       }
       else if(string.charCodeAt(i) >= 33 && string.charCodeAt(i) <= 64){ //para numeros y signos//
-        cifraDe = (string.charCodeAt(i)- 32 + offset) % 32 + 33;
+        cifraDe = (string.charCodeAt(i)- 33 + offset) % 32 + 33;
       } 
       else if(string.charCodeAt(i) >= 205 && string.charCodeAt(i) <= 218){  //para la letra Ñ//
         cifraDe = (string.charCodeAt(i)-205 + offset) % 14 + 205;
