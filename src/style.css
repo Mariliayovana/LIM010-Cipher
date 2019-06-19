@@ -4,23 +4,35 @@ body{
     background-attachment: fixed;
     background-size: 100%;
     background-position: center;
-    text-align: center;
-    
+    text-align: center;    
 }
+
+.background-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -9;
+}
+
 h1{
-    color: rgb(209, 84, 84);
-    font-size: 30pt;
+    color: rgb(199, 28, 28);
+    font-size: 50pt;
     font-family:'Open Sans',sans-serif; 
 }
 .ordenar{
     display: block;
 }
 label{
-    color: rgb(11, 30, 114);
+    color: rgb(44, 23, 160);
+    font-family:'times new roman';
+    font-size: 25px;
 }
 input{
-    margin: 20px;
-    padding: 10PX;
+    margin: 25px;
+    padding: 15PX;
     border-radius:5px;
     border: 0;
 
@@ -28,9 +40,10 @@ input{
 button{
     width: 100px;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     border: 0;
+    color: black
 
 }
 button:hover{
@@ -40,8 +53,8 @@ button:hover{
 
 #error {
 
-    color: rgb(146, 12, 23);
-
+    color: rgb(10, 10, 10);
+   
 
 }   
 .pagina{
